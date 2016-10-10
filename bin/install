@@ -3,14 +3,18 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 # Download
+client_result "curl"
 curl -L -o ${OPENSHIFT_DATA_DIR}tmp.tgz https://download.rethinkdb.com/dist/rethinkdb-2.3.5.tgz
 
 # extract sources
+client_result "tar"
 tar -xvzf ${OPENSHIFT_DATA_DIR}tmp.tgz
 
 # Remove downloaded archive
+client_result "rm"
 rm ${OPENSHIFT_DATA_DIR}tmp.tgz
 
+client_result "echo"
 # Add RETHINKDB_URL environment variable
 if [ -z "$OPENSHIFT_RETHINKDB_PROXY_PORT" ]; then
   # Since $OPENSHIFT_RETHINKDB_PROXY_PORT is missing, cartridge must be running in the main gear
