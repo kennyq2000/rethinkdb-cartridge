@@ -1,23 +1,22 @@
-Name: rethinkdb
-Description: RethinkDB cartridge version 3.2.7.
-Version: '3.2.7'
+Name: mongodb
+Description: RethinkDB cartridge version 2.3.5
+Version: '2.3.5'
 License: RethinkDB License
-License-Url: https://www.rethinkdb.com/faq/#how-is-rethinkdb-licensed
+License-Url: https://rethinkdb.com/faq/
 Vendor: www.rethinkdb.com
-Website: https://www.rethinkdb.com/
+Website: http://www.rethinkdb.com/
 Display-Name: RethinkDB 2.3.5
 Cartridge-Short-Name: RETHINKDB
 Cartridge-Version: '1.0.0'
-Cartridge-Vendor: karthikax
+Cartridge-Vendor: kennyq2000
 Source-Url: https://github.com/kennyq2000/rethinkdb-cartridge.git
 Categories:
 - service
 - database
 - nosql
 - embedded
-- realtime
 Help-Topics:
-  RethinkDB Manual: https://www.rethinkdb.com/docs/
+  RethinkDB Documentation: https://rethinkdb.com/docs/
 Provides:
 - rethinkdb
 
@@ -34,3 +33,5 @@ Endpoints:
   Private-Port-Name: PORT
   Private-Port: 28015
   Public-Port-Name: PROXY_PORT
+  Protocols:
+  - rethinkdb
