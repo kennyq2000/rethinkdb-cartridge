@@ -1,0 +1,36 @@
+Name: rethinkdb
+Description: RethinkDB cartridge version 3.2.7.
+Version: '3.2.7'
+License: RethinkDB License
+License-Url: https://www.rethinkdb.com/faq/#how-is-rethinkdb-licensed
+Vendor: www.rethinkdb.com
+Website: https://www.rethinkdb.com/
+Display-Name: RethinkDB 2.3.5
+Cartridge-Short-Name: RETHINKDB
+Cartridge-Version: '1.0.0'
+Cartridge-Vendor: karthikax
+Source-Url: https://github.com/karthikax/openshift-cartridge-rethinkdb.git
+Categories:
+- service
+- database
+- nosql
+- embedded
+- realtime
+Help-Topics:
+  RethinkDB Manual: https://www.rethinkdb.com/docs/
+Provides:
+- rethinkdb
+
+Scaling:
+  Min: 1
+  Max: 1
+
+Publishes:
+  publish-nosql-db-connection-info:
+    Type: ENV:NET_TCP:nosqldb:connection-info
+
+Endpoints:
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 28015
+  Public-Port-Name: PROXY_PORT
