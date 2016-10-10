@@ -11,6 +11,9 @@ function is_running() {
 }
 
 function start() {
+}
+
+function start1() {
   if is_running; then
     client_result 'RethinkDB is already running.'
   else
@@ -31,6 +34,9 @@ function start() {
 }
 
 function stop() {
+}
+
+function stop1() {
   if ! is_running; then
       client_result 'RethinkDB is already stopped.'
   else
