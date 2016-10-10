@@ -7,7 +7,7 @@ Vendor: www.rethinkdb.com
 Website: http://www.rethinkdb.com/
 Display-Name: RethinkDB 2.3.5
 Cartridge-Short-Name: RETHINKDB
-Cartridge-Version: '1.0.0'
+Cartridge-Version: '1.0.1'
 Cartridge-Vendor: kennyq2000
 Source-Url: https://github.com/kennyq2000/rethinkdb-cartridge.git
 Categories:
